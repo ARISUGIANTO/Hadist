@@ -7,33 +7,25 @@ import Kotak from '../component/kotak';
 const HomeScreen = ({ navigation }) => {
     const handleKotakPress = () => {
         // Pindah ke layar berikutnya, misalnya 'DetailScreen'
-        navigation.navigate('Setting');
+        navigation.navigate('Detail');
     };
 
     return (
         <View style={styles.bg}>
             <View style={styles.titleContainer}>
-                <Text style={styles.titleText}>HADIST SHAHIH</Text>
+                <Text style={styles.titleText}>Kumpulan Hadist Shahih</Text>
             </View>
             <ScrollView horizontal>
                 <Kotak
-                    imageSource={require('../src/image/images.jpg')}
-                    text="Muslim"
+                    imageSource={require('../src/image/hadist1.png')}
+                    text="Hadist"
                     onPress={handleKotakPress}
                 />
                 <Kotak
-                    imageSource={require('../src/image/BG.jpg')}
-                    text="Bukhari"
+                    imageSource={require('../src/image/alquran.jpg')}
+                    text="Alqur'an"
                     onPress={handleKotakPress}
                 />
-                <Kotak
-                    imageSource={require('../src/image/images.jpg')}
-                    text="Tirmidzi"
-                    onPress={handleKotakPress}
-                />
-                <Kotak
-                    imageSource={require('../src/image/BG.jpg')}
-                    text="Nasai" onPress={handleKotakPress} />
             </ScrollView>
         </View>
     );
@@ -44,7 +36,7 @@ export default HomeScreen;
 const styles = StyleSheet.create({
     bg: {
         flex: 1,
-        backgroundColor: 'blue',
+        backgroundColor: '#E48F45',
         alignItems: 'center',
         justifyContent: 'center',
     },

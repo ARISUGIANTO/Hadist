@@ -14,8 +14,8 @@ const Kotak = ({ imageSource, text, onPress }) => {
 
 const styles = StyleSheet.create({
     kotak: {
-        width: 100,
-        height: 100,
+        width: 250,
+        height: 180,
         margin: 10,
         backgroundColor: 'white',
         borderRadius: 10,
@@ -28,9 +28,11 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     text: {
-        fontSize: 14,
+        fontSize: 16,
+        fontWeight: '800',
         textAlign: 'center',
         marginTop: 5,
+        marginBottom: 5
     },
 });
 
